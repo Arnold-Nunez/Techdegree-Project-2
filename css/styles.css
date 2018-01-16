@@ -1,0 +1,201 @@
+
+/*----------------- Header and nav--------------*/
+.name {
+  text-align:center;
+  margin: 0;
+  margin-top:-21px;
+  padding-top: 21px;
+}
+
+nav li {
+  text-align: center;
+  background-color: rgba(242,240,225, .2);
+  width: 100%;
+  display: block;
+  padding: 15px 10px;
+  margin-top: 5px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav {
+  background-color: rgba(242,240,225, .2);
+  width: 100%;
+}
+
+ul {
+  margin-left: -15px;
+  padding: 25px 25px;
+  margin-top: 15px;
+  background-color: rgba(242,240,225, .2);
+}
+
+nav ul li a {
+  padding: 15px 0;
+}
+
+/* -----------------Body------------- */
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background-color: rgba(242,240,225, .2);
+}
+
+.profile-pic {
+  max-width: 65%;
+  margin: auto;
+  display: block;
+}
+
+#home {
+  background-color: rgba(242,240,225, .2);
+}
+
+p,
+h2 {
+  text-align: center;
+  font-size:1.25em;
+}
+
+.contact li {
+  font-size: 1.25em;
+  text-align: center;
+  margin-top: 10px;
+  display: block;
+}
+
+.contact li a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*------------------- Footer ---------------- */
+
+.footer-main {
+  float: left;
+  font-size: 1.25em;
+}
+
+.footer-sec {
+  float: right;
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav {
+  display: none;
+}
+
+footer {
+  Border-top: 1px solid silver;
+}
+
+/* ---------------------Clearfix ----------------*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+/*------------------------------------------------
+Media Q 768
+-----------------------------------------------  */
+@media (min-width: 768px) {
+  nav ul li {
+    display: inline;
+    background-color: rgba(242,240,225, .2);
+  }
+  nav {
+    text-align: center;
+  }
+  .bio {
+    text-align: left;
+    max-width: 45%;
+  }
+  .profile-pic {
+    float: right;
+    width: 45%;
+  }
+  #portfolio {
+    display: block;
+    clear: both;
+    padding: 10px 0;
+    margin: 50px auto;
+  }
+
+  .block {
+    float:left;
+    width: 45%;
+    margin-top: 10px;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+  }
+  .contact-main {
+    clear: both;
+    background-color: rgba(242,240,225, .2);
+  }
+  footer {
+    background-color: rgba(242,240,225, .2);
+  }
+  .footer-sec {
+    display: none;
+  }
+  .footer-nav {
+    float: right;
+    text-align: right;
+    width: 45%;
+    display: inline;
+    padding: 0 10px;
+    margin-left: 10px;
+  }
+  .footer-nav li {
+    display: inline;
+  }
+  .footer-nav li a {
+    color: black;
+    text-decoration: none;
+  }
+
+}
+
+/*------------------------------------------------
+Media Q 1024
+-----------------------------------------------  */
+@media (min-width: 1024px) {
+  .main-nav{
+    display: inline;
+    background-color: rgba(242,240,225, .2);
+  }
+  header ul {
+    float: right;
+  }
+  h1 {
+    float: left;
+  }
+
+  .block {
+    float:left;
+    width: 32%;
+    margin-top: 10px;
+    margin-left: .5%;
+    margin-right: .5%;
+
+  }
+  .contact {
+    display: block;
+    clear: both;
+  }
+  body {
+    max-width: 1150px;
+  }
+  footer {
+    max-width: 1150px;
+  }
+}
